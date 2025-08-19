@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 20:50:32 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/06 14:51:57 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:42:29 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	pop_node(t_node **head)
 	first = *head;
 	value = first->value;
 	*head = first->next;
-
 	free(first);
 	return (value);
 }

@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 18:26:13 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/05 16:26:17 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:45:53 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include "ft_printf.h"
 
 /**
- * @brief  échange simultanément les deux premiers nœuds au sommet des piles A et B
+ * @brief  échange simultanément les deux premiers nœuds au
+ * sommet des piles A et B
  *
  * @param a
  * @param b

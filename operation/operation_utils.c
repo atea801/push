@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 09:15:31 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/05 16:18:14 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:42:01 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,18 +22,12 @@
  */
 void	print_stack(const char *name, t_node *head)
 {
-	// 1) Nom de la pile
-	ft_printf("%s: \n", name);
+	t_node	*cursor;
 
-	// 2) Parcours de chaque nœud
-	t_node *cursor = head;
+	cursor = head;
 	while (cursor)
 	{
-		// 3) Affichage de la valeur
 		printf("%d\n", cursor->value);
 		cursor = cursor->next;
 	}
-
-	// 4) Fin de ligne
-	// printf("\n");
 }
