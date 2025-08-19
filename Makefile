@@ -43,6 +43,7 @@ PARS_SRCS :=	parsing/parsing_build_stack_a.c \
 				parsing/parsing_is_valid_number.c \
 				parsing/parsing_main.c \
 				parsing/parsing_split_args.c \
+				parsing/parsing_utils.c \
 				parsing/parsing_validate_numbers.c
 
 SORT_SRCS := 	sorting/sorting_init.c \

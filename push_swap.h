@@ -69,6 +69,7 @@ int		parsing_check_duplicates(char **args);
 t_node	*parsing_build_stack_a(char **args);
 void	clean_free_stack(t_node *stack);
 t_node	*parsing(int ac, char **av);
+int		is_only_spaces(char *str);
 
 // ----------------------------------------------------
 // SORTING
