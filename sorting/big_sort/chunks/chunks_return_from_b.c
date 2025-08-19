@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:49:24 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:21:36 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 17:03:32 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,13 @@ void	reverse_max_to_top(t_node **b, int pos, int size)
 		rrb(b);
 }
 
+/**
+ * @brief Effectue des rotations vers le haut (ra) jusqu'à placer
+ * le plus petit élément de la pile a au sommet.
+ *
+ * @param a
+ * @param pos
+ */
 void	rotate_min_to_top(t_node **a, int pos)
 {
 	while (pos-- > 0)
