@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 15:49:53 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:26:03 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 16:02:58 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,38 +37,3 @@ void	sort_small(t_node **a, t_node **b)
 			pa(a, b);
 	}
 }
-
-#ifdef TEST_SMALL_SORT
-
-// int	main(int ac, char **av)
-// {
-// 	t_node	*a;
-// 	t_node	*b;
-
-// 	if (ac < 2)
-// 		return (0);
-
-// 	a = parsing(ac, av);
-// 	if (!a)
-// 	{
-// 		ft_printf("Erreur de parsing.\n");
-// 		return (1);
-// 	}
-// 	b = NULL;
-
-// 	ft_printf("Pile AVANT tri :\n");
-// 	print_stack("A", a);
-
-// 	if (stack_size(a) >= 2 && stack_size(a) <= 5)
-// 		sort_small(&a, &b);
-// 	else
-// 		ft_printf("⚠️ Taille non gérée par sort_small (2 à 5 éléments).\n");
-
-// 	ft_printf("Pile APRÈS tri :\n");
-// 	print_stack("A", a);
-
-// 	clean_free_stack(a);
-// 	clean_free_stack(b);
-// 	return (0);
-// }
-#endif
