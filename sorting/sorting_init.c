@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 14:45:02 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/12 17:08:34 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:15:05 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,31 +42,30 @@ void	init_sort(t_node **a)
 	rotate_min_top_final(a);
 }
 
-
 #ifdef TEST_INIT_SORT
-int main(int ac, char **av)
-{
-	t_node	*a = NULL;
+// int main(int ac, char **av)
+// {
+// 	t_node	*a = NULL;
 
-	if (ac <= 1)
-		return (0);
+// 	if (ac <= 1)
+// 		return (0);
 
-	a = parsing(ac, av);
-	if (!a)
-	{
-		write(2, "Error\n", 6);
-		return (1);
-	}
-	ft_printf("== AVANT ==\n");
-	print_stack("A", a);
-	init_sort(&a);
-	ft_printf("== APRES ==\n");
-	print_stack("A", a);
-	if (is_sorted(a))
-		ft_printf("OK\n");
-	else
-		ft_printf("KO\n");
-	clean_free_stack(a);
-	return (0);
-}
+// 	a = parsing(ac, av);
+// 	if (!a)
+// 	{
+// 		write(2, "Error\n", 6);
+// 		return (1);
+// 	}
+// 	ft_printf("== AVANT ==\n");
+// 	print_stack("A", a);
+// 	init_sort(&a);
+// 	ft_printf("== APRES ==\n");
+// 	print_stack("A", a);
+// 	if (is_sorted(a))
+// 		ft_printf("OK\n");
+// 	else
+// 		ft_printf("KO\n");
+// 	clean_free_stack(a);
+// 	return (0);
+// }
 #endif
