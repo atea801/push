@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sorting_is_sorted.c                                :+:      :+:    :+:   */
+/*   initialisation_is_sorted.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 13:28:46 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/06 14:19:34 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:17:49 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-
 
 /**
  * @brief vérifie si les nœuds d’une pile sont déjà classés en ordre croissant
