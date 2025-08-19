@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 16:43:40 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:52:32 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 16:21:13 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,14 @@ static int	*stack_to_array(t_node *a, int size)
 	return (arr);
 }
 
+/**
+ * @brief parcourt chaque élément de la pile et remplace sa valeur
+ * originale par son rang (index) dans le tableau des valeurs triées.
+ *
+ * @param a
+ * @param sorted
+ * @param size
+ */
 static void	replace_with_indices(t_node *a, const int *sorted, int size)
 {
 	int	i;
@@ -52,6 +60,13 @@ static void	replace_with_indices(t_node *a, const int *sorted, int size)
 	}
 }
 
+/**
+ * @brief copie la pile dans un tableau, trie le tableau,
+ * remplace chaque valeur de la pile par son ibdex range dans le tri
+ *
+ * @param a
+ * @return * void
+ */
 void	compress_indices(t_node *a)
 {
 	int	size;
