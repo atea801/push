@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parsing_clean_free_stack.c                         :+:      :+:    :+:   */
+/*   parsing_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 11:07:38 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:48:37 by aautret          ###   ########.fr       */
+/*   Created: 2025/08/19 14:01:30 by aautret           #+#    #+#             */
+/*   Updated: 2025/08/19 14:01:30 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 /**
- * @brief  libère tous les nœuds d’une pile chaînée en parcourant la liste
- * et en libérant la mémoire de chaque nœud
+ * @brief vérifie qu'une chaîne ne contient que des espaces
+ * (ou autres caractères d'espacement) et rien d'autre
  *
- * @param stack
+ * @param str
+ * @return int
  */
-void	clean_free_stack(t_node *stack)
+int	is_only_spaces(char *str)
 {
-	t_node	*tmp;
+	int	i;
 
-	while (stack)
+	i = 0;
+	while (str[i])
 	{
-		tmp = stack;
-		stack = stack->next;
-		free(tmp);
+		if (str[i] != ' ')
+			return (0);
+		i++;
 	}
+	return (1);
 }

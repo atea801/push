@@ -24,6 +24,7 @@ void	print_stack(const char *name, t_node *head)
 {
 	t_node	*cursor;
 
+	(void)name;
 	cursor = head;
 	while (cursor)
 	{

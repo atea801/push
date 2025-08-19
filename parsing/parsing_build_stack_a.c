@@ -6,13 +6,12 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 10:54:30 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/13 11:27:59 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:47:39 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft/libft.h"
-
 
 /**
  * @brief Ajoute un nœud à la fin de la pile
@@ -66,7 +65,6 @@ t_node	*parsing_build_stack_a(char **args)
 	}
 	return (a);
 }
-
 
 #ifdef TEST_BUILD_STACK
 // int	main(int ac, char **av)
