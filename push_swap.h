@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 14:23:18 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/11 10:56:08 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:44:35 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <limits.h> //INT_MAX INT_MIN
-
 # include "ft_printf.h"
 # include "libft.h"
-
-
 
 typedef struct s_node {
 	int				value;
@@ -35,9 +32,6 @@ typedef struct s_stack {
 	int		size_a;
 	int		size_b;
 }	t_stack;
-
-
-
 
 // ----------------------------------------------------
 // OPERATIONS
@@ -62,7 +56,6 @@ void	sa(t_node **a);
 void	sb(t_node **b);
 void	ss(t_node **a, t_node **b);
 
-
 // ----------------------------------------------------
 // PARSING
 // ----------------------------------------------------
@@ -76,7 +69,6 @@ int		parsing_check_duplicates(char **args);
 t_node	*parsing_build_stack_a(char **args);
 void	clean_free_stack(t_node *stack);
 t_node	*parsing(int ac, char **av);
-
 
 // ----------------------------------------------------
 // SORTING
@@ -114,9 +106,6 @@ void	rotate_max_to_top(t_node **b, int pos);
 void	reverse_max_to_top(t_node **b, int pos, int size);
 void	push_back_to_a(t_node **a, t_node **b);
 void	rotate_min_to_top(t_node **a, int pos);
-
-
-
 
 // int		build_stack_from_args(t_node **a, char **av);
 // void	ksort_push_chunks(t_node **a, t_node **b, int k);

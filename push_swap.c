@@ -6,12 +6,11 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 11:43:06 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:13:47 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 13:43:29 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 int	main(int ac, char **av)
 {
