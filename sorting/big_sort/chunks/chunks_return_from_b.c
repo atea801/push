@@ -6,12 +6,11 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:49:24 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/11 10:02:53 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:21:36 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 /**
  * @brief retourne l'index du plus grand élément dans B
