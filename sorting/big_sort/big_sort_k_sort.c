@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:51:22 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/12 17:08:34 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:20:03 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,7 +139,7 @@ void	k_sort(t_node **a, t_node **b)
 }
 
 #ifdef TEST_K_SORT
-int	main(int ac, char **av)
+// int	main(int ac, char **av)
 // {
 // 	t_node	*a;
 // 	t_node	*b;
@@ -156,7 +156,6 @@ int	main(int ac, char **av)
 // 	print_stack("A", a);
 // 	print_stack("B", b);
 
-// 	// Tri complet avec K-sort (doit appeler: compress_indices + push_chunks_to_b + push_back_to_a)
 // 	k_sort(&a, &b);
 
 // 	ft_printf("\n=== APRES K-SORT ===\n");
