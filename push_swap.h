@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 14:23:18 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:12:13 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:57:53 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int		pop_node(t_node **head);
 void	reverse_rotate(t_node **head);
 void	rotate(t_node **head);
 void	swap(t_node **head);
+
 // WRAPPERS
 void	pa(t_node **a, t_node **b);
 void	pb(t_node **a, t_node **b);
@@ -108,10 +109,6 @@ void	reverse_max_to_top(t_node **b, int pos, int size);
 void	push_back_to_a(t_node **a, t_node **b);
 void	rotate_min_to_top(t_node **a, int pos);
 
-// int		build_stack_from_args(t_node **a, char **av);
-// void	ksort_push_chunks(t_node **a, t_node **b, int k);
-// void	ksort_return_from_b(t_node **a, t_node **b);
-// int		choose_k(int len);
 int		stack_size(t_node *a);
 int		is_sorted(t_node *a);
 

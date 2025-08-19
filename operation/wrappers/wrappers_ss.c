@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 18:26:13 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:45:53 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:55:54 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,26 +26,3 @@ void	ss(t_node **a, t_node **b)
 	swap(b);
 	write(1, "ss\n", 3);
 }
-
-#ifdef TEST_SS
-// int	main(void)
-// {
-// 	t_node	*a = NULL;
-// 	t_node	*b = NULL;
-
-// 	push_node(&a, 2);
-// 	push_node(&a, 1);
-// 	push_node(&a, 3);
-
-// 	push_node(&b, 8);
-// 	push_node(&b, 9);
-// 	push_node(&b, 7);
-
-// 	print_stack("PILE A avant ss", a);
-// 	print_stack("PILE B avant ss", b);
-// 	ss(&a, &b);
-// 	print_stack("PILE A apres ss", a);
-// 	print_stack("PILE B apres ss", b);
-// 	return (0);
-// }
-#endif

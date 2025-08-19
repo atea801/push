@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 10:54:30 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:47:39 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:53:58 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,27 +65,3 @@ t_node	*parsing_build_stack_a(char **args)
 	}
 	return (a);
 }
-
-#ifdef TEST_BUILD_STACK
-// int	main(int ac, char **av)
-// {
-// 	char	**args;
-// 	t_node	*a;
-
-// 	args = parsing_split_args(ac, av); // ta fonction point 1
-// 	if (!args)
-// 	{
-// 		ft_printf("Parsing échoué ou arguments invalides.\n");
-// 		return (1);
-// 	}
-// 	a = parsing_build_stack_a(args);
-// 	if (!a)
-// 	{
-// 		ft_printf("Erreur : impossible de construire la pile.\n");
-// 		return (1);
-// 	}
-// 	print_stack("Pile A", a);
-// 	clean_free_stack(a);
-// 	return (0);
-// }
-#endif

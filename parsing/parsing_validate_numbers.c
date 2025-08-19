@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:39:38 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:12:13 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:54:41 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,24 +37,3 @@ int	parsing_validate_numbers(char **args)
 	}
 	return (1);
 }
-
-#ifdef TEST_VALIDATE_NBR
-// int	main(int ac, char **av)
-// {
-// 	char	**args;
-// 	int		result;
-
-// 	args = parsing_split_args(ac, av);
-// 	if (!args)
-// 	{
-// 		ft_printf("Parsing a échoué ou aucun argument valide.\n");
-// 		return (0);
-// 	}
-// 	result = parsing_validate_numbers(args);
-// 	if (result == 1)
-// 		ft_printf("✅ Tous les éléments sont valides.\n");
-// 	else
-// 		ft_printf("❌ Erreur détectée.\n");
-// 	return (0);
-// }
-#endif

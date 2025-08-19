@@ -72,8 +72,6 @@ PRINTF_SRCS := \
 LIBFT_DIR	= libft
 LIBFT		= $(LIBFT_DIR)/libft.a
 
-
-
 # Assemblage de toutes les sources → objets
 SRCS	:= push_swap.c $(OP_SRCS) $(PRINTF_SRCS) $(PARS_SRCS) $(SORT_SRCS)
 OBJS	:= $(SRCS:.c=.o)
@@ -85,119 +83,6 @@ $(LIBFT):
 	@$(MAKE) -C $(LIBFT_DIR)
 $(NAME): $(OBJS) $(LIBFT)
 	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o $@
-
-#==============================================
-#==============================================
-
-# ————————————— TEST OPERATIONS —————————————
-test_sa: CFLAGS += -DTEST_SA
-test_sa: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_sa
-
-test_sb: CFLAGS += -DTEST_SB
-test_sb: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_sb
-
-test_ss: CFLAGS += -DTEST_SS
-test_ss: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_ss
-
-test_ra: CFLAGS += -DTEST_RA
-test_ra:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_ra
-
-test_rb: CFLAGS += -DTEST_RB
-test_rb:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_rb
-
-test_rr: CFLAGS += -DTEST_RR
-test_rr:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_rr
-
-test_rra: CFLAGS += -DTEST_RRA
-test_rra:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_rra
-
-test_rrb: CFLAGS += -DTEST_RRB
-test_rrb:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_rrb
-
-test_rrr: CFLAGS += -DTEST_RRR
-test_rrr:$(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_rrr
-
-test_pa: CFLAGS += -DTEST_PA
-test_pa: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_pa
-
-test_pb: CFLAGS += -DTEST_PB
-test_pb: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_pb
-
-# ————————————— TEST PARSING —————————————
-
-test_is_valid_nbr: CFLAGS += -DTEST_IS_VALID_NBR
-test_is_valid_nbr: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_is_valid_nbr
-
-test_overflow: CFLAGS += -DTEST_OVERFLOW
-test_overflow: $(OBJS)
-	$(CC) $(CFLAGS) $^ -o test_overflow
-
-test_split_args: CFLAGS += -DTEST_SPLIT_ARGS
-test_split_args: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_split_args
-
-test_validate_nbr: CFLAGS += -DTEST_VALIDATE_NBR
-test_validate_nbr: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_validate_nbr
-
-test_check_duplicate: CFLAGS += -DTEST_CHECK_DUPLICATE
-test_check_duplicate: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_check_duplicate
-
-test_build_stack: CFLAGS += -DTEST_BUILD_STACK
-test_build_stack: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_build_stack
-
-test_parsing: CFLAGS += -DTEST_PARSING
-test_parsing: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_parsing
-
-
-# ————————————— SORTING > INITIALISATION —————————————
-
-test_is_sorted: CFLAGS += -DTEST_IS_SORTED
-test_is_sorted: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_is_sorted
-
-test_stack_size: CFLAGS += -DTEST_STACK_SIZE
-test_stack_size: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_stack_size
-
-test_init_sort: CFLAGS += -DTEST_INIT_SORT
-test_init_sort: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_init_sort
-# ————————————— SORTING > SMALL_SORT —————————————
-test_small_sort: CFLAGS += -DTEST_SMALL_SORT
-test_small_sort: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_small_sort
-# ————————————— SORTING > BIG_SORT —————————————
-test_big_sort_index: CFLAGS += -DTEST_BIG_SORT_INDEX
-test_big_sort_index: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_big_sort_index
-
-test_big_sort_chunks: CFLAGS += -DTEST_CHUNKS_PUSH
-test_big_sort_chunks: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_big_sort_chunks
-
-test_k_sort: CFLAGS += -DTEST_K_SORT
-test_k_sort: $(OBJS) $(LIBFT)
-	$(CC) $(CFLAGS) $^ -L$(LIBFT_DIR) -lft -o test_k_sort
-
-
-#==============================================
-#==============================================
 
 # ————————————— RÈGLE GÉNÉRIQUE .c → .o —————————————
 # Chaque .c dépend de push_swap.h et ft_printf.h

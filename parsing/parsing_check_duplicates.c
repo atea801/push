@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 17:26:15 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:48:02 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:54:03 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,24 +41,3 @@ int	parsing_check_duplicates(char **args)
 	}
 	return (1);
 }
-
-#ifdef TEST_CHECK_DUPLICATE
-// int	main(int ac, char **av)
-// {
-// 	char	**args;
-// 	int		result;
-
-// 	args = parsing_split_args(ac, av);
-// 	if (!args)
-// 	{
-// 		ft_printf("Parsing a échoué ou aucun argument valide.\n");
-// 		return (0);
-// 	}
-// 	result = parsing_check_duplicates(args);
-// 	if (result == 1)
-// 		ft_printf("✅ Aucun doublon trouvé.\n");
-// 	else
-// 		ft_printf("❌ Doublon détecté.\n");
-// 	return (0);
-// }
-#endif

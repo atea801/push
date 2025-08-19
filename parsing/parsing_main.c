@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 11:18:24 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 13:55:07 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:54:26 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,20 +62,3 @@ t_node	*parsing(int ac, char **av)
 		return (NULL);
 	return (a);
 }
-
-#ifdef TEST_PARSING
-// int	main(int ac, char **av)
-// {
-// 	t_node	*a;
-
-// 	a = parsing(ac, av);
-// 	if (!a)
-// 	{
-// 		ft_printf("Parsing échoué ou erreur détectée.\n");
-// 		return (1);
-// 	}
-// 	print_stack("Pile A", a);
-// 	clean_free_stack(a);
-// 	return (0);
-// }
-#endif

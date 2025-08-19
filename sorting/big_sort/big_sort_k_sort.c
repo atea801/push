@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:51:22 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:20:03 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:52:49 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,38 +137,3 @@ void	k_sort(t_node **a, t_node **b)
 	move_a_to_b(a, b, total_size);
 	move_b_to_a(a, b);
 }
-
-#ifdef TEST_K_SORT
-// int	main(int ac, char **av)
-// {
-// 	t_node	*a;
-// 	t_node	*b;
-
-// 	if (ac < 2)
-// 		return (0);
-
-// 	a = parsing(ac, av);
-// 	if (!a)
-// 		return (1);
-// 	b = NULL;
-
-// 	ft_printf("=== AVANT ===\n");
-// 	print_stack("A", a);
-// 	print_stack("B", b);
-
-// 	k_sort(&a, &b);
-
-// 	ft_printf("\n=== APRES K-SORT ===\n");
-// 	print_stack("A", a);
-// 	print_stack("B", b);
-
-// 	if (is_sorted(a) && b == NULL)
-// 		ft_printf("\nOK: A est triee et B est vide ✅\n");
-// 	else
-// 		ft_printf("\nKO: pas trie / B non vide ❌\n");
-
-// 	clean_free_stack(a);
-// 	clean_free_stack(b);
-// 	return (0);
-// }
-#endif

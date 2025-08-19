@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 18:23:06 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/05 16:25:24 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:55:41 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,3 @@ void	sa(t_node **a)
 	swap(a);
 	write(1, "sa\n", 3);
 }
-
-#ifdef TEST_SA
-// int	main(void)
-// {
-// 	t_node	*a = NULL;
-
-// 	push_node(&a, 2);
-
-// 	print_stack("Avant sa", a);
-// 	sa(&a);
-// 	print_stack("Après sa", a);
-// 	return (0);
-// }
-#endif

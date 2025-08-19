@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 13:28:33 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/19 14:12:13 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:54:33 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,29 +144,3 @@ char	**parsing_split_args(int ac, char **av)
 		return (NULL);
 	return (parsing_split_all_args(ac, av));
 }
-
-#ifdef TEST_SPLIT_ARGS
-// int	main(int ac, char **av)
-// {
-// 	char	**parsed;
-// 	int		i;
-
-// 	parsed = parsing_split_args(ac, av);
-// 	if (!parsed)
-// 	{
-// 		ft_printf("Parsing a échoué ou aucun argument valide.\n");
-// 		return (0);
-// 	}
-// 	// Afficher le résultat
-// 	i = 0;
-// 	while (parsed[i])
-// 	{
-// 		printf("parsed[%d] = \"%s\"\n", i, parsed[i]);
-// 		i++;
-// 	}
-// 	// Libération mémoire
-// 	clean_free_split(parsed);
-
-// 	return (0);
-// }
-#endif

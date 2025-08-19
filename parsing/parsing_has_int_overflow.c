@@ -6,7 +6,7 @@
 /*   By: aautret <aautret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 19:13:53 by aautret           #+#    #+#             */
-/*   Updated: 2025/08/05 16:29:23 by aautret          ###   ########.fr       */
+/*   Updated: 2025/08/19 14:54:13 by aautret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,16 +46,3 @@ int	parsing_has_int_overflow(char *str)
 	}
 	return (1);
 }
-
-#ifdef TEST_OVERFLOW
-// int	main(int ac, char **av)
-// {
-// 	if (ac < 2)
-// 	{
-// 		ft_printf("Fournir une chaîne à tester.\n");
-// 		return (1);
-// 	}
-// 	ft_printf("%d\n", parsing_has_int_overflow(av[1]));
-// 	return (0);
-// }
-#endif
